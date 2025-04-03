@@ -21,14 +21,14 @@ const NavyPhotoButton = ({
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center bg-[#003399] text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors",
+        "flex items-center bg-[#003399] text-white px-3 py-1 rounded-md hover:bg-blue-800 transition-colors",
         className
       )}
     >
       <img 
         src={imageSrc} 
         alt={imageAlt} 
-        className="h-6 w-6 rounded-full mr-3"
+        className="h-6 w-6 rounded-full mr-2"
       />
       <span>{label}</span>
     </button>
