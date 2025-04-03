@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { cn } from '@/lib/utils';
 
 interface NavyPhotoButtonProps {
   onClick?: () => void;
@@ -18,20 +17,19 @@ const NavyPhotoButton = ({
   className,
 }: NavyPhotoButtonProps) => {
   return (
-    <button
-      onClick={onClick}
-      className={cn(
-        "flex items-center bg-[#003399] text-white px-3 py-1 rounded-md hover:bg-blue-800 transition-colors",
-        className
-      )}
-    >
+    <div className="flex items-center cursor-pointer">
       <img 
         src={imageSrc} 
         alt={imageAlt} 
         className="h-6 w-6 rounded-full mr-2"
       />
-      <span>{label}</span>
-    </button>
+      <button
+        onClick={onClick}
+        className="bg-[#003399] text-white px-3 py-1 rounded-md hover:bg-blue-800 transition-colors"
+      >
+        {label}
+      </button>
+    </div>
   );
 };
 
