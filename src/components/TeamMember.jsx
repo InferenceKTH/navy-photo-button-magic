@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { ExternalLink, Github, Mail } from 'lucide-react';
+import { Github, Mail } from 'lucide-react';
 
 const TeamMember = ({
   name,
