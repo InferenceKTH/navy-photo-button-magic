@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { Github, Mail } from 'lucide-react';
+import { Github, Mail, Linkedin } from 'lucide-react';
 
 const TeamMember = ({
   name,
@@ -56,6 +56,18 @@ const TeamMember = ({
                   className="h-8 w-8 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer hover:bg-gray-200 transition"
                 >
                   <Mail size={16} className="text-gray-600" />
+                </a>
+              )}
+              
+              {socialLinks.linkedin && (
+                <a 
+                  href={socialLinks.linkedin} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label={`${name}'s LinkedIn Profile`}
+                  className="h-8 w-8 rounded-full bg-gray-100 flex items-center justify-center cursor-pointer hover:bg-gray-200 transition"
+                >
+                  <Linkedin size={16} className="text-gray-600" />
                 </a>
               )}
             </div>
